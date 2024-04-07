@@ -1,0 +1,68 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh;
+}
+*,
+*:before,
+*:after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+$vals: map-merge($padding-values, $margin-values);
+
+@each $key, $map in $vals {
+  $prefix: map-get($map, prefix);
+  $mapValues: map-get($map, values);
+
+  @each $size, $value in $mapValues {
+    .#{$prefix}-#{$size} {
+      #{$key}: $value;
+    }
+  }
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  display: block;
+
+  @include media-size(sm) {
+    width: 540px;
+  }
+  @include media-size(md) {
+    width: 720px;
+  }
+  @include media-size(lg) {
+    width: 960px;
+  }
+  @include media-size(xl) {
+    width: 1140px;
+  }
+  @include media-size(xxl) {
+    width: 1320px;
+  }
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}

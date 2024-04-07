@@ -1,0 +1,137 @@
+$theme-colors: (
+  primary: #007aba,
+  secondary: #375e99,
+  gray: #ffffff,
+  lightblue: #9fbbc4,
+);
+
+$base-margin: 5px;
+$base-padding: 5px;
+$base-header-height: 90px;
+
+$breakPoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+$padding-values: (
+  padding: (
+    prefix: "p",
+    values: (
+      1: $base-padding,
+      2: $base-padding * 2,
+      3: $base-padding * 3,
+      4: $base-padding * 4,
+      5: $base-padding * 5,
+    ),
+  ),
+  padding-left: (
+    prefix: "pl",
+    values: (
+      1: $base-padding,
+      2: $base-padding * 2,
+      3: $base-padding * 3,
+      4: $base-padding * 4,
+      5: $base-padding * 5,
+    ),
+  ),
+  padding-right: (
+    prefix: "pr",
+    values: (
+      1: $base-padding,
+      2: $base-padding * 2,
+      3: $base-padding * 3,
+      4: $base-padding * 4,
+      5: $base-padding * 5,
+    ),
+  ),
+  padding-top: (
+    prefix: "pt",
+    values: (
+      1: $base-padding,
+      2: $base-padding * 2,
+      3: $base-padding * 3,
+      4: $base-padding * 4,
+      5: $base-padding * 5,
+    ),
+  ),
+  padding-bottom: (
+    prefix: "pb",
+    values: (
+      1: $base-padding,
+      2: $base-padding * 2,
+      3: $base-padding * 3,
+      4: $base-padding * 4,
+      5: $base-padding * 5,
+    ),
+  ),
+);
+
+$display-values: (
+  display: (
+    prefix: "d",
+    values: (
+      block: "block",
+      flex: "flex",
+      inline: "inline",
+      inline-block: "inline-block",
+      none: "none",
+    ),
+  ),
+);
+
+$margin-values: (
+  margin: (
+    prefix: "m",
+    values: (
+      1: $base-margin,
+      2: $base-margin * 2,
+      3: $base-margin * 3,
+      4: $base-margin * 4,
+      5: $base-margin * 5,
+    ),
+  ),
+  margin-left: (
+    prefix: "ml",
+    values: (
+      1: $base-margin,
+      2: $base-margin * 2,
+      3: $base-margin * 3,
+      4: $base-margin * 4,
+      5: $base-margin * 5,
+    ),
+  ),
+  margin-right: (
+    prefix: "mr",
+    values: (
+      1: $base-margin,
+      2: $base-margin * 2,
+      3: $base-margin * 3,
+      4: $base-margin * 4,
+      5: $base-margin * 5,
+    ),
+  ),
+  margin-top: (
+    prefix: "mt",
+    values: (
+      1: $base-margin,
+      2: $base-margin * 2,
+      3: $base-margin * 3,
+      4: $base-margin * 4,
+      5: $base-margin * 5,
+    ),
+  ),
+  margin-bottom: (
+    prefix: "mb",
+    values: (
+      1: $base-margin,
+      2: $base-margin * 2,
+      3: $base-margin * 3,
+      4: $base-margin * 4,
+      5: $base-margin * 5,
+    ),
+  ),
+);

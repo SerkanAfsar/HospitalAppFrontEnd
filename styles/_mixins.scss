@@ -1,0 +1,24 @@
+@mixin flex($direction: row, $alignItems: center, $justifyContent: center) {
+  display: flex;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  flex-direction: $direction;
+}
+
+@mixin media-size($value: sm) {
+  $val: map-get($breakPoints, $value);
+
+  @if ($val) {
+    @if ($value: sm) {
+      @media all and (min-width: $val) {
+        @content;
+      }
+    } @else {
+      @media all and (max-width: $val) {
+        @content;
+      }
+    }
+  } @else {
+    @error "Media Not Found";
+  }
+}

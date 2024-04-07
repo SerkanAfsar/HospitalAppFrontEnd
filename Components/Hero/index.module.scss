@@ -1,0 +1,31 @@
+.wrapper {
+  @include flex;
+  width: 100%;
+  height: calc(100vh - $base-header-height);
+  &__content {
+    @include flex($justifyContent: space-between);
+    display: inline-flex;
+  }
+  &__info {
+    flex: 0 0 50%;
+    @include flex(
+      $direction: column,
+      $justifyContent: flex-start,
+      $alignItems: flex-start
+    );
+    gap: 30px;
+    color: #000;
+    h1,
+    h2 {
+      font-size: 40px;
+      display: block;
+      text-align: left;
+    }
+    h2 {
+      font-size: 20px;
+    }
+  }
+  &__img {
+    flex: 0 0 50%;
+  }
+}

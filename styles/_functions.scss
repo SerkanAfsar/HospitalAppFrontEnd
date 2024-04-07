@@ -1,0 +1,8 @@
+@function set-color($color: primary) {
+  $val: map-get($theme-colors, $color);
+  @if ($val) {
+    @return $val;
+  } @else {
+    @error "Color Not Found";
+  }
+}

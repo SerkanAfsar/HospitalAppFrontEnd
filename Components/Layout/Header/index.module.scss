@@ -1,0 +1,30 @@
+.wrapper {
+  width: 100%;
+  height: $base-header-height;
+  background: set-color(primary);
+  color: #fff;
+
+  &__content {
+    height: 100%;
+    @include flex($alignItems: center, $justifyContent: space-between);
+  }
+  &__logo {
+    font-size: 20px;
+  }
+  nav {
+    display: none;
+    @include media-size(md) {
+      display: block;
+    }
+    ul {
+      @include flex;
+      gap: 30px;
+
+      li,
+      a {
+        color: #fff;
+        display: block;
+      }
+    }
+  }
+}

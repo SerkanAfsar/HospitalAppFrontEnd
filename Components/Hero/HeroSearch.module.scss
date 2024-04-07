@@ -1,0 +1,20 @@
+.wrapper {
+  background: set-color(primary);
+  padding: $base-padding * 4;
+  border-radius: 50px;
+  width: 100%;
+  gap: 10px;
+  align-items: stretch;
+  @include flex($justifyContent: space-between);
+  & > * {
+    flex: 2;
+  }
+  &__drp {
+    width: 100%;
+  }
+  &__btn {
+    flex: 1;
+    align-self: stretch;
+    border: 2px solid #000;
+  }
+}
